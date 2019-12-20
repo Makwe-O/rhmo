@@ -1,0 +1,32 @@
+{
+  "name": "mmakwe/rhmo",
+  "description": "Relaince hmo test",
+  "authors": [
+    {
+      "name": "Mmakwe Onyeka",
+      "email": "notmaks@yahoo.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ],
+    "psr-4": {
+      "App\\": "/src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^6.5",
+    "guzzlehttp/guzzle": "^6.5"
+  },
+  "scripts": {
+    "test": [
+      "./vendor/bin/phpunit"
+    ]
+  }
+}
